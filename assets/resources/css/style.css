@@ -204,3 +204,132 @@ h4{
       border: none;
     }
   }
+
+  /*Header Mobile------------------------------------------------------------*/
+
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 7vh);
+    width: 100%;
+    height: 820px;
+  }
+
+  .header{
+    max-width: 1200px;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .text-header{
+    width: 80vw;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    display: flex;
+  }
+
+  .text-header > h1{
+    margin: 20px;
+    font-size: clamp(2.25rem, 1.6071rem + 2.8571vw, 3.75rem);
+  }
+
+.img-burguer{
+  width: clamp(18.75rem, 14.7321rem + 17.8571vw, 28.125rem);
+  z-index: 2;
+  margin-top: 100px;
+}
+
+  /*Header desktop------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1200px){
+  .header{
+    flex-direction: row;
+  }
+
+  .img-burguer{
+    margin-top: 0px;
+  }
+  .text-header{
+    text-align: start;
+    max-width: 650px;
+    align-items: start;
+  }
+  .text-header > h1{
+    font-size: clamp(3.4375rem, -2.1875rem + 7.5vw, 4.375rem);
+    margin: 8px 0;
+  }
+}
+
+/*About mobile--------------------------------------------------------------------------*/
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about{
+  margin: 70px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.875rem, 1.2228rem + 3.2609vw, 3.75rem);
+}
+
+.img-about{
+  height: clamp(11.25rem, 8.2065rem + 15.2174vw, 20rem);
+  width: clamp(19.375rem, 13.288rem + 30.4348vw, 36.875rem);
+}
+
+.text-img-about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.875rem, 1.2228rem + 3.2609vw, 3.75rem);
+  text-align: center;
+}
+
+/*About desktop--------------------------------------------------------------------------*/
+@media screen and (min-width: 1200px){
+  .about{
+    max-width: 80%;
+    height: 70vh;
+  }
+  .text-img-about{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 80%;
+    
+  }
+  .img-about{
+    width:  clamp(23.75rem, -66.25rem + 120vw, 31.25rem);/*380*/
+    height: clamp(15.625rem, -14.375rem + 40vw, 18.125rem);
+    /*250*/
+  }
+
+  .text-about{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  p{
+    font-size:  clamp(0.9375rem, -1.3125rem + 3vw, 1.125rem);
+  }
+}
