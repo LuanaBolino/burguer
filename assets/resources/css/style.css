@@ -333,3 +333,72 @@ section{
     font-size:  clamp(0.9375rem, -1.3125rem + 3vw, 1.125rem);
   }
 }
+
+/*Cardápio mobile---------------------------------------------*/
+
+.cardapio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px; 
+  padding: 100px 0;
+}
+
+.populares{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.itens{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%; 
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 277px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.p-red{
+  color: var(--cor-1);
+}
+
+.img-item{
+  height: 90px;
+  width: 120px;
+}
+
+@media screen and (min-width: 950px){
+  .cardapio{
+    gap: 50px;
+  }
+  .itens{
+    width: 100%;
+    gap: 30px;
+    
+  }
+  .populares{
+    gap: 45px;
+  }
+  .item{
+    width: 194px;
+  }
+
+  .img-item{
+    width: 194px;
+    height: 144px;
+  }
+}
