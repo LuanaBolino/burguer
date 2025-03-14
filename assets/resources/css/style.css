@@ -58,24 +58,33 @@ h4{
 
 /*Botões------------------------------------------------------*/
 
-.btn-white{
-    width: 143px;
-    height: 43px;
-    margin-top: 20px;
-    background-color: var(--cor-3);
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
-    border: 2px solid var(--cor-2);
-  }
-  
-  .btn-white:hover{
-    background-color: var(--cor-1);
-    color: var(--cor-3);
-    border: 2px solid var(--cor-1);
-  }
-  
-  
+button {
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid var(--cor-1);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 var(--cor-1);
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 var(--cor-1);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
   hr{
     margin: 0;
     border: none; 
@@ -594,6 +603,7 @@ footer {
 @media screen and (min-width: 600px){
   .footer{
     align-items: center;
+    gap: 10px;
   }
 }
 
