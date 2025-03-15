@@ -18,6 +18,11 @@ a{
     font-size: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
     font-weight: bold;
     text-decoration: none;
+    color: white;
+}
+
+.botao:visited {
+  color: white; 
 }
 
 .logo{
