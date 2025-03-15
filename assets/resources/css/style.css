@@ -58,7 +58,7 @@ h4{
 
 /*Botões------------------------------------------------------*/
 
-button {
+.botao {
   position: relative;
   display: inline-block;
   margin-top: 15px;
@@ -74,14 +74,16 @@ button {
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 var(--cor-1);
   text-transform: uppercase;
+  color: var(--cor-2);
+  font-weight: 600;
 }
 
-button:hover {
+.botao:hover {
   color: white;
   box-shadow: inset 0 -100px 0 0 var(--cor-1);
 }
 
-button:active {
+.botao:active {
   transform: scale(0.9);
 }
 
