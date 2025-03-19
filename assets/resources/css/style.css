@@ -1,6 +1,11 @@
 html{
     font-family: "Roboto Condensed", sans-serif;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 /*Cores-------------------------------------------------------*/
 
 :root {
@@ -38,6 +43,10 @@ h1, h2{
     font-family: "Lilita One", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+h1{
+  font-size: 90px;
 }
 
 h2{
@@ -228,15 +237,13 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 7vh);
     width: 100%;
-    height: 820px;
   }
 
   .header{
     max-width: 1200px;
     width: 80%;
-    height: 100vh;
+    height: 820px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -367,11 +374,12 @@ section{
   padding: 100px 0;
 }
 
-.populares{
+.opcoes{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
+  margin: 50px;
 }
 
 .itens{
@@ -424,6 +432,7 @@ section{
     height: 144px;
   }
 }
+
 
 /*Galeria mobile-----------------------------------------*/
 .galeria{
@@ -608,6 +617,32 @@ footer {
   .footer{
     align-items: center;
     gap: 10px;
+  }
+}
+
+
+
+/*Cardápio style-----------------------------------------------------------*/
+
+.header-cardapio{
+  background-image: url("../images/cardapio/background-mobile.png");
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-cardapio > h1{
+  color: var(--cor-3);
+  font-size: clamp(3.4375rem, 3rem + 2.1875vw, 5.625rem); 
+}
+
+
+@media screen and (min-width:600px){
+  .header-cardapio{
+      background-image: url('../images/cardapio/background.png');
+      width: 100vw;
+      height: 307px;
   }
 }
 

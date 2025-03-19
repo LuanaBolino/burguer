@@ -1,3 +1,5 @@
+
+//menu mobile---------------------------------------------------------
 document.addEventListener("scroll", () => {
     if (window.innerWidth > 1200) {
       const navbar = document.getElementById("nav-red");
@@ -18,7 +20,6 @@ document.addEventListener("scroll", () => {
       }
     }
   });
-  
 
   function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
@@ -45,3 +46,14 @@ document.addEventListener('click', (event) => {
         menuIcon.src = "assets/resources/images/svg/menu.svg"; 
     }
 });
+
+
+
+//botões----------------------------------------------------------------
+
+let cardapioButton = document.querySelector('#cardapio-button');
+
+cardapioButton.addEventListener('click', function(){
+  window.open('../../pages/cardapio.html', '_self');
+})
+
