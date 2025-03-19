@@ -53,7 +53,8 @@ document.addEventListener('click', (event) => {
 
 let cardapioButton = document.querySelector('#cardapio-button');
 
-cardapioButton.addEventListener('click', function(){
-  window.open('pages/cardapio.html', '_self');
-})
+cardapioButton.addEventListener('click', function() {
+  window.open('https://LuanaBolino.github.io/burguer/pages/cardapio.html', '_self');
+});
+
 
