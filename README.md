@@ -1,7 +1,9 @@
 # .Burguer
 
-<img src="./assets/resources/images/captura1.png" alt="gotech print"/>
-https://luanabolino.github.io/burguer/
+<div align="center">
+  <img src="./assets/resources/images/captura1.png" alt="print"/>
+  https://luanabolino.github.io/burguer/
+</div>
 
 ## Descrição
 O **Burguer** é uma landing page para uma hamburgueria, projetada para exibir informações sobre o cardápio, contato e localização do estabelecimento.
