@@ -8,6 +8,9 @@
 ## Descrição
 O **Burguer** é uma landing page para uma hamburgueria, projetada para exibir informações sobre o cardápio, contato e localização do estabelecimento.
 
+## Protótipo
+https://www.figma.com/design/5cPKc72G6kWWfeJV1AE4up/Burguer?node-id=1-2&t=NDOGBeLPzjqx348s-1
+
 ## Tecnologias Utilizadas
   <div align="left">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
